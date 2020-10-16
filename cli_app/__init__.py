@@ -7,8 +7,8 @@ import click
 from cli_app import commands
 
 
-__author__ = """Travis Hathaway"""
-__email__ = 'travis@example.com'
+__author__ = """Harri Hirvonsalo"""
+__email__ = ''
 __version__ = '0.1.0'
 
 
@@ -18,4 +18,4 @@ def cli():
 
 
 # Add commands
-cli.add_command(commands.hello)
+cli.add_command(commands.record)
