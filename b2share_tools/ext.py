@@ -7,6 +7,7 @@ from __future__ import absolute_import, print_function
 import click
 
 from .commands import record as record_cmd
+from .commands import account as account_cmd
 
 @click.group()
 def b2tools():
@@ -25,6 +26,7 @@ class B2ShareTools(object):
         self.init_config(app)
         app.extensions['b2share-tools'] = self
         b2tools.add_command(record_cmd)
+        b2tools.add_command(account_cmd)
         app.cli.add_command(b2tools)
 
     def init_config(self, app):

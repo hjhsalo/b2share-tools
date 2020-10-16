@@ -16,7 +16,7 @@ requirements = [
 ]
 
 setup(
-    name='b2tools',
+    name='b2share-tools',
     version='0.1.0',
     description="B2SHARE cli administrative commands",
     long_description=readme,
